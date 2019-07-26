@@ -1,0 +1,124 @@
+***********************************************************************************
+*                                                                                 *
+*  PPPPPPPPPPPP    L               U           U   M           M         A        *
+*  P           P   L               U           U   MM         MM        A A       *
+*  P           P   L               U           U   M M       M M       A   A      *
+*  P           P   L               U           U   M  M     M  M      A     A     *
+*  P           P   L               U           U   M   M   M   M     A       A    *
+*  PPPPPPPPPPPP    L               U           U   M    M M    M    A         A   *
+*  P               L               U           U   M     M     M   AAAAAAAAAAAAA  *
+*  P               L               U           U   M           M   A           A  *
+*  P               L               U           U   M           M   A           A  *
+*  P               LLLLLLLLLLLLL    UUUUUUUUUUU    M           M   A           A  *
+*                                                                                 *
+*            [Plu]gin-based [M]icrobiome [A]nalysis (formerly MiAMi)              *
+* (C) 2016, 2018 Bioinformatics Research Group, Florida International University  *
+*    Under MIT License From Open Source Initiative (OSI), All Rights Reserved.    *
+*                                                                                 *
+*    Any professionally published work using PluMA should cite the following:     *
+*                        T. Cickovski and G. Narasimhan.                          *
+*                Constructing Lightweight and Flexible Pipelines                  *
+*                 Using Plugin-Based Microbiome Analysis (PluMA)                  *
+*                     Bioinformatics 34(17):2881-2888, 2018                       *
+*                                                                                 *
+***********************************************************************************
+[PluMA] Running Plugin: Enterotypes
+Medoids:
+     ID             
+[1,] "14" "Active_N"
+[2,] "2"  "Active_B"
+[3,] "43" "Former_U"
+Clustering vector:
+Active_A Active_B Active_C Active_D Active_E Active_F Active_G Active_H 
+       1        2        2        1        1        3        2        1 
+Active_I Active_J Active_K Active_L Active_M Active_N Active_O Active_P 
+       1        1        3        3        1        1        3        3 
+Active_Q Active_R Active_S Active_T Active_U Active_V Former_A Former_B 
+       3        3        3        1        1        1        2        3 
+Former_C Former_D Former_E Former_F Former_G Former_H Former_I Former_J 
+       1        1        1        1        2        3        2        2 
+Former_K Former_L Former_M Former_N Former_O Former_P Former_Q Former_R 
+       3        3        1        1        3        3        1        1 
+Former_S Former_T Former_U Former_V Former_X Former_Y  Never_A  Never_B 
+       3        3        3        1        1        1        2        1 
+ Never_C  Never_D  Never_E  Never_F  Never_G  Never_H  Never_I 
+       3        1        3        3        3        3        3 
+Objective function:
+   build     swap 
+0.265426 0.265426 
+
+Numerical information per cluster:
+     size  max_diss   av_diss  diameter separation
+[1,]   24 0.5454669 0.2299749 0.7017773  0.2177547
+[2,]    8 0.4207414 0.2673178 0.5176896  0.3069249
+[3,]   23 0.4651783 0.3017605 0.6252394  0.2177547
+
+Isolated clusters:
+ L-clusters: character(0)
+ L*-clusters: character(0)
+
+Silhouette plot information:
+         cluster neighbor   sil_width
+Former_X       1        3  0.32677439
+Active_N       1        3  0.31696275
+Active_U       1        3  0.30827323
+Active_I       1        3  0.30091591
+Former_M       1        3  0.28873501
+Former_Y       1        3  0.28163260
+Active_D       1        3  0.27485069
+Former_N       1        3  0.27150699
+Active_M       1        3  0.26940153
+Active_V       1        3  0.26412547
+Active_T       1        3  0.25950103
+Former_Q       1        3  0.24193628
+Never_B        1        3  0.24186086
+Former_V       1        3  0.23058678
+Active_H       1        3  0.20877250
+Former_F       1        3  0.20361049
+Former_C       1        3  0.18378599
+Active_E       1        3  0.16388544
+Active_A       1        3  0.13395267
+Active_J       1        2  0.13058071
+Former_R       1        3  0.11769553
+Never_D        1        3  0.09872377
+Former_D       1        3  0.05152104
+Former_E       1        2 -0.03834405
+Active_B       2        1  0.39107827
+Former_J       2        1  0.38314610
+Former_I       2        1  0.31483200
+Former_G       2        1  0.29858657
+Former_A       2        1  0.24009814
+Active_C       2        1  0.22293953
+Active_G       2        1  0.21825219
+Never_A        2        1  0.10002430
+Active_O       3        1  0.13110171
+Former_K       3        1  0.12008836
+Former_P       3        1  0.11093264
+Never_C        3        1  0.09341524
+Active_S       3        1  0.09280067
+Never_E        3        1  0.08040930
+Never_I        3        1  0.07238817
+Former_H       3        1  0.05518885
+Former_B       3        1  0.05399460
+Former_T       3        1  0.05116113
+Former_S       3        1  0.04919301
+Never_H        3        1  0.02902793
+Active_R       3        1  0.02036293
+Active_P       3        1  0.01875824
+Active_K       3        1 -0.01229156
+Active_Q       3        1 -0.01342327
+Never_G        3        1 -0.01389561
+Former_U       3        1 -0.02718459
+Former_L       3        1 -0.02755509
+Former_O       3        1 -0.03376818
+Active_L       3        1 -0.05495012
+Never_F        3        1 -0.05806071
+Active_F       3        2 -0.06979141
+Average silhouette width per cluster:
+[1] 0.21380198 0.27111964 0.02903923
+Average silhouette width of total data set:
+[1] 0.1448747
+
+Available components:
+[1] "medoids"    "id.med"     "clustering" "objective"  "isolation" 
+[6] "clusinfo"   "silinfo"    "diss"       "call"      

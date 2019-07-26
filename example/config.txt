@@ -1,0 +1,2 @@
+Prefix plugins/Enterotypes/example/
+Plugin Enterotypes inputfile SmokingData.txt outputfile none
