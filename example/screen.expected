@@ -23,6 +23,10 @@
 *                                                                                 *
 ***********************************************************************************
 [PluMA] Running Plugin: Enterotypes
+[1] "CLUSTER"
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  1.000   1.000   2.000   1.982   3.000   3.000 
+[1] "RESULT"
 Medoids:
      ID             
 [1,] "14" "Active_N"
@@ -122,3 +126,60 @@ Average silhouette width of total data set:
 Available components:
 [1] "medoids"    "id.med"     "clustering" "objective"  "isolation" 
 [6] "clusinfo"   "silinfo"    "diss"       "call"      
+ [1] "Active_A" "Active_B" "Active_C" "Active_D" "Active_E" "Active_F"
+ [7] "Active_G" "Active_H" "Active_I" "Active_J" "Active_K" "Active_L"
+[13] "Active_M" "Active_N" "Active_O" "Active_P" "Active_Q" "Active_R"
+[19] "Active_S" "Active_T" "Active_U" "Active_V" "Former_A" "Former_B"
+[25] "Former_C" "Former_D" "Former_E" "Former_F" "Former_G" "Former_H"
+[31] "Former_I" "Former_J" "Former_K" "Former_L" "Former_M" "Former_N"
+[37] "Former_O" "Former_P" "Former_Q" "Former_R" "Former_S" "Former_T"
+[43] "Former_U" "Former_V" "Former_X" "Former_Y" "Never_A"  "Never_B" 
+[49] "Never_C"  "Never_D"  "Never_E"  "Never_F"  "Never_G"  "Never_H" 
+[55] "Never_I" 
+[1] "PCOA"
+Class: pco dudi
+Call: dudi.pco(d = pc.dist, scannf = F, nf = k)
+
+Total inertia: 0.09097
+
+Eigenvalues:
+     Ax1      Ax2      Ax3      Ax4      Ax5 
+0.025234 0.010914 0.009360 0.005622 0.004344 
+
+Projected inertia (%):
+    Ax1     Ax2     Ax3     Ax4     Ax5 
+ 27.737  11.997  10.289   6.179   4.775 
+
+Cumulative projected inertia (%):
+    Ax1   Ax1:2   Ax1:3   Ax1:4   Ax1:5 
+  27.74   39.73   50.02   56.20   60.98 
+
+(Only 5 dimensions (out of 54) are shown)
+
+NULL
+[1] "BET"
+Between-class analysis
+
+Class: between dudi
+Call: bca.dudi(x = obs.pca, fac = as.factor(pc.cluster), scannf = F, 
+    nf = k - 1)
+
+Total inertia: 18.96
+
+Eigenvalues:
+    Ax1     Ax2 
+ 11.721   7.237 
+
+Projected inertia (%):
+    Ax1     Ax2 
+  61.83   38.17 
+
+Cumulative projected inertia (%):
+    Ax1   Ax1:2 
+  61.83  100.00 
+
+Total unconstrained inertia (obs.pca): 126
+
+Inertia of obs.pca explained by as.factor(pc.cluster) (%): 15.05
+
+NULL
