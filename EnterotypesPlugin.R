@@ -59,6 +59,8 @@ run <- function() {
 pc.dist=dist.JSD(pc)
 k=3
 pc.cluster=pam.clustering(pc.dist, k)
+print("CLUSTER")
+print(summary(pc.cluster))
 obs.silhouette=mean(silhouette(pc.cluster, pc.dist)[,3])
 
 pc.denoized=noise.removal(pc, percent=0.01)
@@ -78,11 +80,17 @@ s.class(obs.pcoa$li, fac=as.factor(pc.cluster), grid=F, col=c(3,2,4))
 
 #General info
 result <- pam(as.dist(pc.dist), k, diss=TRUE)
+print("RESULT")
 print(summary(result))
 
 fac=as.factor(colnames(pc))
+print(colnames(pc))
 s.class(obs.bet$ls, fac, grid=F, clabel=0.5, col=pc.cluster)
 s.class(obs.pcoa$li, fac, grid=F, clabel=0.5, col=pc.cluster)
+print("PCOA")
+print(summary(obs.pcoa))
+print("BET")
+print(summary(obs.bet))
 }
 
 output <- function(outputfile) {
