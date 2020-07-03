@@ -2,7 +2,8 @@
 # Language: R
 # Input: TXT
 # Output: Screen
-# Tested with: PluMA 1.0, R 3.2.5
+# Tested with: PluMA 1.1, R 4.0.0
+
 
 PluMA plugin that runs the algorithm of (Arumugam et al, 2011) for defining
 enterotypes within a collection of microbiome samples.
